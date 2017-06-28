@@ -1,0 +1,11 @@
+.outer-div{
+  background-color: whitesmoke;
+  height: 100%;
+  width: 60%;
+  margin:auto;
+}
+
+.slide-show{
+  width: 80%;
+  margin: auto;
+}
