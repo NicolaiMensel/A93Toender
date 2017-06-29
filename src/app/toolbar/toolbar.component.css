@@ -1,22 +1,23 @@
 .toolbar{
-  height: 100px;
+  height: 72px;
 }
 .mainMenuBar{
   z-index: 999;
   position: fixed;
-  margin-top: 32px;
-  height: 67px;
+  margin-top: 30px;
+  height: 50px;
   width: 100%;
-  background-image: url("/assets/images/header_bg.jpg");
+  /*background-image: url("/assets/images/header_bg.jpg");*/
+  background-color: #283440;
 }
 
 .secondMenuBar{
   z-index: 1;
   position: fixed;
   margin-top: 0px;
-  height: 32px;
+  height: 25px;
   width: 100%;
-  background-image: url("/assets/images/nav_bg3.jpg");
+  /*background-image: url("/assets/images/nav_bg3.jpg");*/
 }
 
 .end-line{
@@ -30,45 +31,52 @@
 .a93-logo{
   z-index: 1;
   position: fixed;
-  margin-top: -13px;
-  margin-left: 1%;
+  margin-top: -18px;
+  margin-left: 20%;
 }
 
 .mainBtn{
   font-family: "Tw Cen MT";
-  background-image: url("/assets/images/header_bg2.jpg");
-  background-position: bottom;
+  /*background-image: url("/assets/images/header_bg2.jpg");
+  background-position: bottom;*/
+  background-color: #283440;
   color: whitesmoke;
   border: none;
-  font-size: 24px;
+  font-size: 18px;
   height: 50px;
-  width: 110px;
-  padding : 3px 10px;
-  margin-right: 20px;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  /*margin-right: 20px;
   margin-left: 20px;
-  margin-top: 7px;
-  border-right: 1px solid black;
+  margin-top: 0px;
+  /*border-right: 1px solid black;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   border-top: 1px solid black;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  border-radius: 10px;
+  border-radius: 0px;
   box-shadow: 3px 3px 2px black;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 2px black;*/
 }
 
 .mainBtn:hover{
   cursor: pointer;
   box-shadow: none;
-  color: silver;
+  color: whitesmoke;
+  background-color: #50585F;
+  transition-property: background-color;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  transition-delay: initial;
 }
+
 
 .secondBtn{
   font-family: "Tw Cen MT";
-  font-size: 24px;
-  color: whitesmoke;
-  text-shadow: 2px 2px 2px black;
+  font-size: 20px;
+  color: black;
   border: none;
   background: transparent;
   margin-right: 20px;
