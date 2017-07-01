@@ -10,13 +10,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HomeViewComponent } from './home/home-view.component';
-import { ArrangementComponent } from './arrangement/arrangement.component';
-import { ArrangementViewComponent } from './arrangement/arrangement-view.component';
+import { EventsComponent } from './events/events.component';
+import { EventsViewComponent } from './events/events-view.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'arrangements', component: ArrangementComponent}
+  { path: 'events', component: EventsComponent}
 ];
 
 @NgModule({
@@ -25,8 +25,8 @@ const routes: Routes = [
     HomeComponent,
     ToolbarComponent,
     HomeViewComponent,
-    ArrangementComponent,
-    ArrangementViewComponent,
+    EventsComponent,
+    EventsViewComponent,
   ],
   imports: [
     BrowserModule,

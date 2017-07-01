@@ -1,18 +1,18 @@
-.mainArrDiv{
+.mainEventDiv{
   height: 1000px;
   width: 1100px;
   margin:auto;
   margin-top: 20px;
 }
 
-.nextArrDiv{
+.nextEventDiv{
   float: left;
   height: 350px;
   width: 700px;
   margin-top: 50px;
 }
 
-.nextArrImg{
+.nextEventImg{
   width: 341px;
   height: 192px;
   border: 2px solid black;
@@ -20,39 +20,34 @@
   float: left;
 }
 
-.nextArrContent{
+.nextEventContent{
   font-family: "Tw Cen MT";
   white-space: pre-wrap;
   padding-left: 20px;
 }
 
-.upcomingArrDiv{
+.upcomingEventDiv{
   float: right;
   width: 300px;
   height: 900px;
   margin-top: 50px;
 }
 
-.upcomingArrContent {
+.upcomingEventContent {
   height: 50px;
   margin-bottom: -16px;
-  /*background-image: linear-gradient(#50585F, #283440);
-  border-radius: 3px;
-  color: white;
-  text-shadow: 2px 2px 2px black;
-  */
 }
 
-.upcomingArrContent:focus{
+.upcomingEventContent:focus{
   outline:0;
   background-color: lightgrey;
 }
 
-.upcomingArrContent:focus:hover{
+.upcomingEventContent:focus:hover{
   background-color: lightgrey;
 }
 
-.upcomingArrTitle{
+.upcomingEventTitle{
   height: 40px;
   margin-bottom: -16px;
   margin-top: 20px;
@@ -63,12 +58,12 @@
 
 }
 
-.upcomingArrContent:hover{
+.upcomingEventContent:hover{
   background-color: whitesmoke;
   cursor: pointer;
 }
 
-.pastArrDiv{
+.pastEventDiv{
   float: left;
   width: 700px;
   height: 450px;

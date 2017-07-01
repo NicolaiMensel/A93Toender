@@ -1,4 +1,4 @@
-export class Arrangement {
+export class Event {
   id?: string;
   title: string;
   description: string;
