@@ -1,0 +1,40 @@
+<div align="center">
+  <div class="mainArrDiv">
+  <div class="nextArrDiv" align="left">
+    <h2 >{{title}}</h2>
+    <h1>{{nextArr.title}}</h1>
+    <h5 style="float: right; margin-top: -40px; margin-right: 10px;">{{nextArr.date | date :  "dd.MM.y"}}</h5>
+    <img src="/assets/images/arr_temp.jpg" class="nextArrImg">
+    <pre class="nextArrContent">{{nextArr.description}}</pre>
+    <button class="clickableBtn">Se Invitation</button>
+  </div>
+    <div class="upcomingArrDiv" align="left">
+      <h2>Passerende</h2>
+      <div class="upcomingArrTitle">
+        <h6 style="float: left;" class="col-sm-8">Titel</h6>
+        <h6 style="float: left;" class="col-sm-2">Dato</h6>
+      </div>
+      <div *ngFor="let arr of pastArr " tabindex="1" class="upcomingArrContent" (click)="setSelectedArr(arr)">
+        <hr>
+        <h4 style="float: left;">{{arr.title}}</h4>
+        <h4 style="float: right;">{{arr.date | date :  "dd.MM.y"}}</h4>
+      </div>
+      <hr>
+    </div>
+    <div class="pastArrDiv" align="left">
+      <h2>Kommende</h2>
+      <div class="upcomingArrTitle">
+        <h6 style="float: left;" class="col-sm-5">Titel</h6>
+        <h6 style="float: left;" class="col-sm-4">Pris</h6>
+        <h6 style="float: right;" class="col-sm-2">Dato</h6>
+      </div>
+      <div *ngFor="let pastArr of upcomingArr" tabindex="1" class="upcomingArrContent" (click)="setSelectedArr(pastArr)">
+        <hr>
+        <h4 style="float: left;" class="col-sm-5">{{pastArr.title}}</h4>
+        <h4 style="float: left;" class="col-sm-4">{{pastArr.price}}</h4>
+        <h4 style="float: right;" class="col-sm-2">{{pastArr.date | date :  "dd.MM.y"}}</h4>
+      </div>
+    </div>
+  </div>
+
+</div>

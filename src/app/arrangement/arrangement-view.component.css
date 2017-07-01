@@ -1,0 +1,89 @@
+.mainArrDiv{
+  height: 1000px;
+  width: 1100px;
+  margin:auto;
+  margin-top: 20px;
+}
+
+.nextArrDiv{
+  float: left;
+  height: 350px;
+  width: 700px;
+  margin-top: 50px;
+}
+
+.nextArrImg{
+  width: 341px;
+  height: 192px;
+  border: 2px solid black;
+  border-radius: 10px;
+  float: left;
+}
+
+.nextArrContent{
+  font-family: "Tw Cen MT";
+  white-space: pre-wrap;
+  padding-left: 20px;
+}
+
+.upcomingArrDiv{
+  float: right;
+  width: 300px;
+  height: 900px;
+  margin-top: 50px;
+}
+
+.upcomingArrContent {
+  height: 50px;
+  margin-bottom: -16px;
+  /*background-image: linear-gradient(#50585F, #283440);
+  border-radius: 3px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  */
+}
+
+.upcomingArrContent:focus{
+  outline:0;
+  background-color: lightgrey;
+}
+
+.upcomingArrContent:focus:hover{
+  background-color: lightgrey;
+}
+
+.upcomingArrTitle{
+  height: 40px;
+  margin-bottom: -16px;
+  margin-top: 20px;
+  background-color: #283440;
+  border-radius: 3px;
+  padding-top: 10px;
+  color: white;
+
+}
+
+.upcomingArrContent:hover{
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.pastArrDiv{
+  float: left;
+  width: 700px;
+  height: 450px;
+  margin-top: 50px;
+}
+
+h2{
+  font-family: "Tw Cen MT";
+}
+
+h4{
+  font-family: "Tw Cen MT";
+  padding-left: 0px;
+  padding-right: 5px;
+  font-size: 20px;
+  margin-top: -3px;
+}
+
