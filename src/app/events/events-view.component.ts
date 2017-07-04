@@ -26,5 +26,4 @@ export class EventsViewComponent implements OnInit {
     this.nextEvent = newEvent;
     this.title = "Valgte";
   }
-
 }

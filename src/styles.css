@@ -20,16 +20,23 @@ body {
 .clickableBtn{
   height: 40px;
   width: auto;
-  background-color: #283440;
-  background-image: linear-gradient(#50585F, #283440);
   border:none;
   border-radius: 3px;
   padding: 1px 14px 12px;
   color: white;
   font-family: "Tw Cen MT";
   font-size: 24px;
-  float: right;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.15), inset 0 0 1px rgba(30,42,50,0.5)
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15), inset 0 0 1px rgba(30,42,50,0.5);
+}
+
+.blueColor{
+  background-color: #283440;
+  background-image: linear-gradient(#50585F, #283440);
+}
+
+.redColor{
+  background-color: darkred;
+  background-image: linear-gradient(red, darkred);
 }
 
 .clickableBtn:hover{

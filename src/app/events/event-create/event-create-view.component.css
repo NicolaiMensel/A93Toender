@@ -1,0 +1,141 @@
+.mainEventDiv{
+  margin-top: 70px;
+  width: 1100px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+input{
+  font-size: 26px;
+}
+
+.upload-picture-div{
+  margin-top: -335px;
+  margin-left: 570px;
+  position: absolute;
+  z-index: 999;
+  height: 50px;
+  width: 50px;
+}
+#upload-file-label {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.material-icons{
+  color: #283440;
+  background-image: url("/assets/images/plus-icon.png");
+  background-size: 50px 50px;
+}
+
+.topic-img {
+  border: 2px solid black;
+}
+
+.inputField{
+  font-family: "Tw Cen MT";
+  border:none;
+  border-bottom:  1px solid #283440;
+  float: left;
+}
+
+.descriptionText{
+  width: 440px;
+  height: 280px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border: 2px solid #283440;
+  border-radius: 7px;
+  font-size: 20px;
+}
+
+.input-group-addon{
+  background-color: #283440;
+}
+
+.input-group{
+  border-radius: 6px;
+  border: 1px solid #283440;
+}
+
+#priceTxt{
+  width: 440px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+#titleTxt{
+  font-size: 30px;
+}
+.titleHeader{
+  background-color: #283440;
+  color: white;
+  border-radius: 3px;
+  padding: 8px 10px 2px;
+}
+
+
+.imageDiv{
+  float: left;
+  margin-top: 30px;
+}
+
+#savePictureBtn{
+  margin-left: 550px;
+  position: absolute;
+  z-index: 999;
+}
+
+.firstRow{
+  float: left;
+  width: 1100px;
+}
+
+.form-group{
+  margin-left: 113px;
+  margin-top: -40px;
+}
+
+#submitBtn{
+  float: right;
+}
+
+#cancelBtn{
+  float: left;
+}
+
+h2{
+  font-family: "Tw Cen MT";
+}
+
+h3{
+  font-family: "Tw Cen MT";
+}
+
+textarea{
+  resize: none;
+  font-family: "Tw Cen MT";
+}
+
+input{
+  font-family: "Tw Cen MT";
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+textarea:focus {
+  outline-width: 0;
+}
+
+
+
+
+
+
+

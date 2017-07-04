@@ -1,0 +1,61 @@
+<div align="center">
+
+  <div class="mainEventDiv" align="left">
+    <div class="titleHeader">
+    <h3>Ny Event</h3>
+    </div>
+    <input size="20%"
+           name="titleInput"
+           class="inputField "
+           id="titleTxt"
+           placeholder="Titel.."
+           [(ngModel)]="newEvent.title">
+    <div class="firstRow">
+    <div *ngIf="!changingImage" class="imageDiv">
+      <img class="topic-img"
+           [src]="data && data.image ? data.image : 'http://placehold.it/625x339?text=Tilføj Billede Her!'">
+      <div class="upload-picture-div">
+        <label id="upload-file-label" aria-label="backup" class="material-icons">
+          <input type="file" (change)="fileChangeListener($event)">
+        </label>
+      </div>
+    </div>
+    <div *ngIf="changingImage" class="imageDiv">
+      <button
+        type="button" (click)="saveNewImage()" id="savePictureBtn" class="clickableBtn blueColor">Gem
+      </button>
+      <img-cropper #cropper [image]="data" [settings]="cropperSettings"></img-cropper>
+
+      <br>
+
+    </div>
+      <form class="form-inline">
+        <div class="form-group">
+          <div class="input-group">
+            <input class="form-control" placeholder="Vælg dato her >>"
+                   name="dp" [(ngModel)]="newEvent.date" ngbDatepicker #d="ngbDatepicker">
+            <div class="input-group-addon" (click)="d.toggle()" >
+              <img src="/assets/images/calardar-icon2.png" style="width: 1.6rem; height: 1.6rem; cursor: pointer;" (click)="doStuff()"/>
+            </div>
+          </div>
+        </div>
+      </form>
+      <input
+             name="titleInput"
+             class="inputField"
+             id="priceTxt"
+             style="margin-top: 8px;"
+             placeholder="Pris.."
+             [(ngModel)]="newEvent.price">
+      <textarea md-maxlength="150" rows="10"
+                md-select-on-focus
+                name="messageInput"
+                placeholder="Beskrivelse.."
+                class="descriptionText"
+                [(ngModel)]="newEvent.description"></textarea>
+    </div>
+
+    <button id="submitBtn" class="clickableBtn blueColor" (click)="tryCreateEvent()">Tilføj</button>
+    <button id="cancelBtn" class="clickableBtn redColor" routerLink="../events">Fortryd</button>
+  </div>
+</div>
