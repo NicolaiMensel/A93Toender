@@ -1,0 +1,19 @@
+<div class="mainDiv" align="center">
+<div class="magazinesDiv" align="left">
+  <h1>Medlemsblade</h1>
+  <button id="createBtn" class="clickableBtn greenColor">Tilføj</button>
+  <div class="listMagazineTitle">
+    <h6 style="float: left;" class="col-sm-5">Dato fra</h6>
+    <h6 style="float: left;" class="col-sm-4">Kvartal</h6>
+    <h6 style="float: right;" class="col-sm-2">Link</h6>
+  </div>
+  <div *ngFor="let magazine of magazines" tabindex="1" class="listMagazineContent" (click)="setSelectedArr(arr)">
+    <hr>
+    <h4 style="float: left;" class="col-sm-5">{{magazine.date | date :  "dd.MM.y"}}</h4>
+    <h4 style="float: left;" class="col-sm-4">{{magazine.date | date :'Q/yyyy'}}</h4>
+    <button id="downloadBtn" class="clickableBtn blueColor col-sm-2">Hent</button>
+    <button id="deleteBtn" class="clickableBtn redColor col-sm-1">Slet</button>
+  </div>
+  <hr>
+</div>
+</div>

@@ -1,0 +1,66 @@
+.mainDiv{
+  height: 1000px;
+  width: 1100px;
+  margin:auto;
+  margin-top: 20px;
+}
+
+.magazinesDiv{
+  float: left;
+  width: 1100px;
+  height: 450px;
+  margin-top: 50px;
+}
+
+.listMagazineContent {
+  height: 50px;
+  margin-bottom: -16px;
+}
+
+.listMagazineContent:focus{
+  outline:0;
+}
+
+.listMagazineTitle{
+  height: 40px;
+  margin-bottom: -16px;
+  margin-top: 20px;
+  background-color: #283440;
+  border-radius: 3px;
+  padding-top: 10px;
+  color: white;
+}
+
+.listMagazineContent:hover{
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+#downloadBtn{
+  margin-top: -12px;
+  margin-right: 114px;
+  float: right;
+}
+
+#createBtn{
+  float: right;
+  margin-top: -100px;
+}
+
+#deleteBtn{
+  float: right;
+  margin-top: -12px;
+  margin-right: 20px;
+}
+
+h2{
+  font-family: "Tw Cen MT";
+}
+
+h4{
+  font-family: "Tw Cen MT";
+  padding-left: 0px;
+  padding-right: 5px;
+  font-size: 20px;
+  margin-top: -3px;
+}

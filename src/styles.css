@@ -39,6 +39,11 @@ body {
   background-image: linear-gradient(red, darkred);
 }
 
+.greenColor{
+  background-color: darkgreen;
+  background-image: linear-gradient(green, darkgreen);
+}
+
 .clickableBtn:hover{
   cursor: pointer;
   background-image: none;

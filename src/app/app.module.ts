@@ -17,11 +17,16 @@ import { EventCreateComponent } from './events/event-create/event-create.compone
 import { EventCreateViewComponent } from './events/event-create/event-create-view.component';
 import {FormsModule} from "@angular/forms";
 import {MyNgbDateParserFormatter} from "./my-ngb-date-parser-formatter";
+import { MagazinesComponent } from './magazines/magazines.component';
+import { MagazinesViewComponent } from './magazines/magazines-view.component';
+import { MagazineCreateComponent } from './magazines/magazine-create/magazine-create.component';
+import { MagazineCreateViewComponent } from './magazines/magazine-create/magazine-create-view.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'events', component: EventsComponent},
-  { path: 'event-create', component: EventCreateComponent}
+  { path: 'event-create', component: EventCreateComponent},
+  { path: 'magazines', component: MagazinesComponent},
 ];
 
 @NgModule({
@@ -34,7 +39,11 @@ const routes: Routes = [
     EventsViewComponent,
     EventCreateComponent,
     EventCreateViewComponent,
-    ImageCropperComponent
+    ImageCropperComponent,
+    MagazinesComponent,
+    MagazinesViewComponent,
+    MagazineCreateComponent,
+    MagazineCreateViewComponent,
   ],
   imports: [
     BrowserModule,
